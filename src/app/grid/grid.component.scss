@@ -1,0 +1,37 @@
+// :host {
+//   kendo-grid {
+//     --kendo-grid-header-background: red;
+//     --kendo-grid-header-color: var(--color-text-primary);
+//     --kendo-grid-row-background-hover: var(--color-bg-secondary);
+//     --kendo-grid-selectable-hover: var(--color-bg-secondary);
+//   }
+// }
+
+// kendo-grid {
+//   --kendo-grid-header-background: green;
+//   --kendo-grid-header-color: var(--color-text-primary);
+//   --kendo-grid-row-background-hover: var(--color-bg-secondary);
+//   --kendo-grid-selectable-hover: var(--color-bg-secondary);
+// }
+
+:host ::ng-deep kendo-grid {
+  .k-grid-header {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+  }
+
+  .k-grid-table .k-state-hover {
+    background-color: var(--color-bg-secondary);
+  }
+
+  .k-grid-row .k-state-selected:hover,
+  .k-grid-row .k-state-selected.k-state-hover {
+    background-color: var(--color-bg-secondary);
+  }
+}
+
+.k-column-title {
+  color: red !important;
+}
+
+

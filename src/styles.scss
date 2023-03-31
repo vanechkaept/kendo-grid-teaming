@@ -1,0 +1,49 @@
+:root {
+  --color-bg-primary: #007acc;
+  --color-text-primary: rgb(220, 10, 10);
+  --color-bg-secondary: #e6f2ff;
+  --kendo-theme-type: 'dark';
+  --primary-color: red;
+
+  --red-color: red;
+
+  --bg-color: rgb(0, 0, 0);
+  --text-color: rgb(255, 255, 255);
+}
+
+// $theme-type: var(--theme-type);
+$theme-type: var(--kendo-theme-type);
+
+// https://www.telerik.com/kendo-angular-ui/components/styling/theme-default/customization-grid/
+$kendo-grid-text: var(--text-color);
+$kendo-table-text: var(--text-color);
+$kendo-grid-header-bg: var(--bg-color);
+$kendo-grid-header-text: var(--text-color);
+$kendo-table-header-text: var(--text-color);
+$kendo-grid-border: var(--red-color);
+$kendo-grid-header-border: var(--red-color);
+$kendo-grid-hover-bg: var(--text-color);
+$kendo-grid-hover-text: var(--bg-color);
+// dont work
+// $kendo-grid-bg: var(--bg-color);
+// $kendo-table-bg: var(--bg-color);
+.k-grid .k-table-thead,
+.k-grid .k-table-tbody,
+.k-grid .k-table-tfoot {
+  background-color: var(--bg-color);
+}
+
+// @import '~@progress/kendo-theme-default/scss/grid/_index.scss';
+
+// .k-grid td {
+//   color: #9d9696;
+//   background-color: var(--main-color);
+// }
+// .k-grid-header .k-header {
+//   color: var(--text-color);
+//   background-color: var(--background-color);
+// }
+
+@import '~@progress/kendo-theme-default/dist/all.scss';
+// @import '~@progress/kendo-theme-material/scss/grid/_index.scss';
+// $color-bg-primary: blue;
